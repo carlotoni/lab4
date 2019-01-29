@@ -64,6 +64,8 @@ $routes->setTranslateURIDashes(false);
 $routes->set404Override();
 $routes->setAutoRoute(true);
 
+$routes->resource('students');
+
 /**
  * --------------------------------------------------------------------
  * Route Definitions
