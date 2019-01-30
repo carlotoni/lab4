@@ -105,7 +105,17 @@
 			</div>
 
 			<div class="guide">
-				<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
+				<p>The page you are looking at has been modified by Team 5: Carlo & Toni</p>
+
+				<p>
+				
+				<ul>
+
+				<li><a href="http://localhost:8080/courses">Courses</a></li>
+				<li><a href="http://localhost:8080/students">Students</a></li>
+				</ul>
+				
+				</p>
 
 				<p>If you would like to edit this page you'll find it located at:</p>
 
