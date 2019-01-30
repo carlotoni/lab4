@@ -14,12 +14,12 @@ class StudentModel extends Model
     '5' => ['id'=>'5', 'first'=>'llama', 'last'=>'alpaca']
     ];
 
-    public function find($id)
+    public function find($id = null)
     {
         return $this->data[$id];
     }
 
-    public function findAll()
+    public function findAll(int $limit = 0, int $offset = 0)
     {
         return $this->data;
     }
