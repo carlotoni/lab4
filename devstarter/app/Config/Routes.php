@@ -65,6 +65,7 @@ $routes->set404Override();
 $routes->setAutoRoute(true);
 
 $routes->resource('students');
+$routes->resource('courses');
 
 /**
  * --------------------------------------------------------------------
