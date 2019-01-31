@@ -111,27 +111,61 @@
 				
 				<ul>
 
-				<li><a href="http://localhost:8080/courses">Courses</a></li>
-				<li><a href="http://localhost:8080/students">Students</a></li>
-				</ul>
+				<li><a href="<?php echo site_url('courses')?>">Courses</a></li>
+                    <ol>
+                        <li><a href="<?php echo site_url('courses/1')?>">Class 1</a></li>
+                            <form action="<?php echo site_url('courses/1/edit')?>" method="get">
+                                <button type="submit">Edit</button>
+                            </form>
+                            <form action="<?php echo site_url('courses/update/1')?>" method="post">
+                                <button type="submit">Update</button>
+                            </form>
+                            <form action="<?php echo site_url('courses/delete/1')?>" method="post">
+                                <button type="submit">Delete</button>
+                            </form>
+                        <li><a href="<?php echo site_url('courses/2')?>">Class 2</a></li>
+                        <li><a href="<?php echo site_url('courses/3')?>">Class 3</a></li>
+                        <li><a href="<?php echo site_url('courses/4')?>">Class 4</a></li>
+                        <li><a href="<?php echo site_url('courses/5')?>">Class 5</a></li>
+                        <li><a href="<?php echo site_url('courses/6')?>">Class 6</a></li>
+                    </ol>
+                    <form action="<?php echo site_url('courses/new')?>" method="get">
+                        <button type="submit">New</button>
+                    </form>
+                    <form action="<?php echo site_url('courses/create')?>" method="post">
+                        <button type="submit">Create</button>
+                    </form>
+
+                    <br/><br/>
+
+                    <li><a href="<?php echo site_url('students')?>">Students</a></li>
+                    <ol>
+                        <li><a href="<?php echo site_url('students/1')?>">Student 1</a></li>
+                        <form action="<?php echo site_url('students/1/edit')?>" method="get">
+                            <button type="submit">Edit</button>
+                        </form>
+                        <form action="<?php echo site_url('students/update/1')?>" method="post">
+                            <button type="submit">Update</button>
+                        </form>
+                        <form action="<?php echo site_url('students/delete/1')?>" method="post">
+                            <button type="submit">Delete</button>
+                        </form>
+                        <li><a href="<?php echo site_url('students/2')?>">Student 2</a></li>
+                        <li><a href="<?php echo site_url('students/3')?>">Student 3</a></li>
+                        <li><a href="<?php echo site_url('students/4')?>">Student 4</a></li>
+                        <li><a href="<?php echo site_url('students/5')?>">Student 5</a></li>
+                    </ol>
+                    <form action="<?php echo site_url('students/new')?>" method="get">
+                        <button type="submit">New</button>
+                    </form>
+                    <form action="<?php echo site_url('students/create')?>" method="post">
+                        <button type="submit">Create</button>
+                    </form>
+
+
+                </ul>
 				
 				</p>
-
-				<p>If you would like to edit this page you'll find it located at:</p>
-
-				<pre>
-				<code>
-					application/Views/welcome_message.php
-				</code>
-				</pre>
-
-				<p>The corresponding controller for this page is found at:</p>
-
-				<pre>
-				<code>
-					application/Controllers/Home.php
-				</code>
-				</pre>
 
 				<p>If you are exploring CodeIgniter for the very first time, you
 					should start by reading the
