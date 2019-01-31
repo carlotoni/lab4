@@ -24,3 +24,4 @@ application/logs/*
 !.vscode/extensions.json
 
 .idea/*
+devstarter/writable/debugbar/*

@@ -1,16 +1,16 @@
 <?php
 namespace App\Controllers;
-use App\Models\StudentModel;
+use App\Models\CourseModel;
 use CodeIgniter\Controller;
 use CodeIgniter\API\ResponseTrait;
 
-class Students extends Controller
+class Courses extends Controller
 {
     use ResponseTrait;
 
     public function index()
     {
-        $model = new StudentModel();
+        $model = new CourseModel();
 
         $std = $model->findAll();
 
@@ -29,7 +29,7 @@ class Students extends Controller
 
     public function show($id)
     {
-        $model = new StudentModel();
+        $model = new CourseModel();
         $std = $model->find($id);
 
         return $this->respond($std, 200);

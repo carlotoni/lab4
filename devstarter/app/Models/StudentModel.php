@@ -10,16 +10,18 @@ class StudentModel extends Model
     '1' => ['id'=>'1', 'first'=>'toni', 'last'=>'he'],
     '2' => ['id'=>'2', 'first'=>'carlo', 'last'=>'mendoza'],
     '3' => ['id'=>'3', 'first'=>'remy', 'last'=>'truong'],
-    '4' => ['id'=>'4', 'first'=>'aaron', 'last'=>'vong']
+    '4' => ['id'=>'4', 'first'=>'aaron', 'last'=>'vong'],
+    '5' => ['id'=>'5', 'first'=>'llama', 'last'=>'alpaca']
     ];
 
-    public function find($id)
+    public function find($id = null)
     {
         return $this->data[$id];
     }
 
-    public function findAll()
+    public function findAll(int $limit = 0, int $offset = 0)
     {
         return $this->data;
     }
 }
+
